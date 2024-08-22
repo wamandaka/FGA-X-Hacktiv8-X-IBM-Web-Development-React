@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+.box {
+  background-color: greenyellow;
+  height: 200px;
+  width: 300px;
+  padding: 20px;
+}
+
+.box-dua {
+  background-color: navy;
+  height: 100px;
+  width: 600px;
+  padding-left: 70px;
+}

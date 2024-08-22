@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blue;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+.box {
+  background-color: blueviolet;
+  height: 200px;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.box-dua {
+  background-color: red;
+  height: 100px;
+  width: 600px;
+  margin-left: 70px;
+}

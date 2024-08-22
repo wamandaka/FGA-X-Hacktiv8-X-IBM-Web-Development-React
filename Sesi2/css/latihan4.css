@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+  color: #fff;
+}
+
+.link {
+  font-size: 20pt;
+}
+
+.link:hover {
+  color: red;
+}
+
+.link:link {
+  color: blue;
+}
+
+.link:active {
+  color: green;
+}
+
+.link:visited {
+  background-color: yellow;
+}

@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+  color: #fff;
+}
+
+.tulisan_kiri {
+  text-align: left;
+}
+
+.tulisan_kanan {
+  text-align: right;
+}
+
+.tulisan_tengah {
+  text-align: center;
+}
+
+.tulisan_justify {
+  text-align: justify;
+}
