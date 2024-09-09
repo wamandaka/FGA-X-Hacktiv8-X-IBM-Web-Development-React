@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="button" onclick="login()">Login</button>
+    </form>
+
+    <script>
+        // Konstanta users
+        const users = [
+            { username: 'user1', password: 'pass1', fullName: 'User One' },
+            { username: 'user2', password: 'pass2', fullName: 'User Two' },
+            { username: 'user3', password: 'pass3', fullName: 'User Three' }
+        ];
+
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const user = users.find(u => u.username === username);
+
+            if (user) {
+                if (user.password === password) {
+                    alert(`Selamat datang ${user.fullName}!`);
+                } else {
+                    alert('Invalid username or password');
+                }
+            } else {
+                alert('User not found');
+            }
+        }
+    </script>
+</body>
+</html>
