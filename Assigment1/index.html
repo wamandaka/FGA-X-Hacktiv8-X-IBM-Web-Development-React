@@ -14,142 +14,192 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="nav-wrapper">
-      <div class="container-lg">
-        <!-- <div class="nav-logo">Daka</div> -->
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">PRODUCT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">GALLERY</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">BLOG</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">INVENTORY</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-white shadow">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <div class="container-xl max-w-4xl">
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inventory</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
 
     <!-- Profile -->
-    <div class="container-lg">
-      <div class="profile-card">
-        <img src="assets/alya.png" alt="profile-pict" />
-        <div class="profile-info">
-          <h1>Alya</h1>
-          <p>Front End Designer</p>
-          <div class="profile-buttons">
-            <button class="contact-btn">Kontak</button>
-            <button class="resume-btn">Resume</button>
+    <div class="container max-w-4xl">
+      <div class="card mb-3 mt-5 shadow">
+        <div class="row g-0">
+          <div class="col-12 col-md-3 text-center text-md-start">
+            <img
+              src="assets/profile.jpg"
+              class="img-fluid rounded-circle mx-auto d-block mb-3"
+              alt="profile"
+              style="height: 200px"
+            />
           </div>
-        </div>
-        <div class="profile-details">
-          <p><strong>Availability</strong>: Full Time</p>
-          <p><strong>Usia</strong>: 19</p>
-          <p><strong>Lokasi</strong>: Jakarta</p>
-          <p><strong>Pengalaman</strong>: 2 Tahun</p>
-          <p><strong>Email</strong>: email@gmail.com</p>
+          <div class="col-12 col-md-3 text-center text-md-start">
+            <div class="card-body h-full position-relative pt-4">
+              <h1 id="profile-name" class="card-title">Daka</h1>
+              <small id="profile-role" class="text-body-secondary">Front End Designer</small>
+              <div
+                class="d-flex justify-content-center justify-content-md-start gap-2 position-md-absolute bottom-md-0 mt-5"
+              >
+                <a href="#" class="btn btn-primary">Contact</a>
+                <a href="#" class="btn btn-outline-success">Resume</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="card-body font-bold text-center text-md-start">
+              <p class="card-text">Availability</p>
+              <p class="card-text">Age</p>
+              <p class="card-text">Location</p>
+              <p class="card-text">Experience</p>
+              <p class="card-text">Email</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div id="profile-details" class="card-body text-body-secondary text-center text-md-start">
+              <p id="profile-availability" class="card-text">Full Time</p>
+              <p id="profile-age" class="card-text">24</p>
+              <p id="profile-location" class="card-text">Jakarta</p>
+              <p id="profile-experience" class="card-text">2 Years</p>
+              <p id="profile-email" class="card-text">test@gmail.com</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Form -->
-    <div class="container">
-      <form class="form-wrapper">
+    <div class="container max-w-4xl mb-5">
+      <form id="profile-form" class="mt-5 bg-white mt-5 shadow p-5">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            ><strong>Name</strong></label
-          >
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Type your name"
+          />
+          <label for="role" class="form-label">Role</label>
+          <input
+            type="text"
+            class="form-control"
+            id="role"
+            placeholder="Type your role"
+          />
+          <label for="availability" class="form-label">Availability</label>
+          <input
+            type="text"
+            class="form-control"
+            id="availability"
+            placeholder="Type your availability"
+          />
+          <label for="age" class="form-label">Age</label>
+          <input
+            type="text"
+            class="form-control"
+            id="age"
+            placeholder="Type your age"
+          />
+          <label for="location" class="form-label">Location</label>
+          <input
+            type="text"
+            class="form-control"
+            id="location"
+            placeholder="Type your location"
+          />
+          <label for="experience" class="form-label">Year of Experience</label>
+          <input
+            type="text"
+            class="form-control"
+            id="experience"
+            placeholder="Type your experience"
+          />
+          <label for="email" class="form-label">Email</label>
           <input
             type="email"
             class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
+            id="email"
+            placeholder="Type your email"
           />
         </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            ><strong>Role</strong></label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            ><strong>Availability</strong></label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            ><strong>Age</strong></label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            ><strong>Address</strong></label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            ><strong>Year of Experience</strong></label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            ><strong>Email</strong></label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <button type="submit" class="btn btn-success" style="width: 100%">
-          Submit
-        </button>
+        <button type="submit" class="btn btn-success w-full">Submit</button>
       </form>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script>
+      document.getElementById("profile-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Ambil nilai dari form
+        const name = document.getElementById("name").value;
+        const role = document.getElementById("role").value;
+        const availability = document.getElementById("availability").value;
+        const age = document.getElementById("age").value;
+        const location = document.getElementById("location").value;
+        const experience = document.getElementById("experience").value;
+        const email = document.getElementById("email").value;
+
+        // Validasi input
+        if (!name || !role || !availability || !age || !location || !experience || !email) {
+          alert("All fields are required!");
+          return;
+        }
+
+        if (isNaN(age) || isNaN(experience)) {
+          alert("Age and Experience should be numbers!");
+          return;
+        }
+
+        if (!validateEmail(email)) {
+          alert("Please enter a valid email address!");
+          return;
+        }
+
+        // Update profile
+        document.getElementById("profile-name").textContent = name;
+        document.getElementById("profile-role").textContent = role;
+        document.getElementById("profile-availability").textContent = availability;
+        document.getElementById("profile-age").textContent = age;
+        document.getElementById("profile-location").textContent = location;
+        document.getElementById("profile-experience").textContent = experience + " Years";
+        document.getElementById("profile-email").textContent = email;
+      });
+
+      function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
+      }
+    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

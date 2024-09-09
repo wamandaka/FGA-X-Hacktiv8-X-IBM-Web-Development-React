@@ -9,99 +9,58 @@ ol {
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #f8f9fd !important;
   font-family: Arial, Helvetica, sans-serif;
 }
+.h-full {
+  height: 100%;
+}
 
-/* .container {
-  max-width: 1200px;
-  margin: 0 auto;
-} */
+.w-full {
+  width: 100%;
+}
 
-.nav-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 150px;
-  background-color: #fff;
-  box-shadow: 1px 1px 30px grey;
+.bg-green {
+  background-color: #008001 !important;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.float-right {
+  float: right;
+}
+
+.text-slate {
+  color: #5a5a5a;
 }
 
 .nav .nav-item .nav-link {
-  color: gray;
+  color: #5a5a5a;
+  text-transform: uppercase;
 }
 
-.profile-card {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  background-color: #fff;
-  padding: 20px 50px;
-  margin: 50px 150px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.card-body .card-text {
+  margin: 10px;
 }
 
-.profile-card img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+.navbar .nav {
+  margin-left: auto;
 }
 
-.profile-details {
-  /* text-align: right; */
-  font-size: 14px;
-  color: #555;
-  border-left: #f1f1f1 2px solid;
-  padding-left: 20px;
+.max-w-4xl {
+  max-width: 960px !important;
 }
 
-.profile-details p {
-  margin: 16px 0;
+.form-control {
+  margin-bottom: 10px;
 }
 
-.profile-buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.profile-buttons .contact-btn {
-  background-color: #0000ff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.profile-buttons .resume-btn {
-  background-color: #fff;
-  color: #008000;
-  padding: 10px 20px;
-  border: 2px solid #008000;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.profile-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
-  margin-right: 50px;
-}
-
-.form-wrapper {
-  background-color: #fff;
-  padding: 20px 50px;
-  margin: 50px 150px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@media screen and (max-width: 768px) {
-  .profile-card {
-    flex-direction: column;
-  }
+.form-label {
+  font-weight: bold;
 }
